@@ -1,0 +1,14 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: lightgray;
+    text-align: center;
+  }
+  
+  .full-width {
+    background-color: lightblue;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 20px;
+    text-align: center;
+  }
