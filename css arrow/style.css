@@ -1,0 +1,38 @@
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 8px solid #c2e1f5;
+    margin: 40px;
+    height: 36px;
+    text-align: center;
+    line-height: 2;
+    color: antiquewhite;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #88b7d5;
+	border-width: 40px;
+	margin-top: -40px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #c2e1f5;
+	border-width: 51px;
+	margin-top: -51px;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+}
