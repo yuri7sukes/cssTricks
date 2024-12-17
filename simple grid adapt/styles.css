@@ -1,0 +1,44 @@
+.wrapper {
+    background-color: #fff;
+    padding: 1em;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "hd"
+        "bd"
+        "sd"
+        "ft";
+
+}
+
+@media (min-width: 900px) {
+    .wrapper {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+            "hd hd"
+            "bd sd"
+            "ft ft";
+    }
+}
+
+header {
+    grid-area: hd;
+}
+
+article {
+    grid-area: bd;
+}
+
+aside {
+    grid-area: sd;
+}
+
+footer {
+    grid-area: ft;
+}
+
+.wrapper>* {
+    background-color: rgba(111, 41, 97, .4);
+    border-radius: 5px;
+    padding: 10px;
+}
